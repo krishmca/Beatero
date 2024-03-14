@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html{
+    font-size:10px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+body{
+    height:100vh;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #cdcdcd;
+    background-image: url("/images/asfalt-dark.png");
+}
+
+.title_card{
+    position: relative;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    margin:auto;
+    font-size: 5.4rem;
+    margin-bottom: 20px;
+}
+
+.grad_wrap{
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: auto;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 70px 0;
+}
+    
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+.player{
+    background-color: #001e40;
+    padding: 7rem;
+    border-radius: 6rem 0em;
+    -webkit-box-shadow: 6px 6px 16px 0px rgba(87,87,87,1);
+    -moz-box-shadow: 6px 6px 16px 0px rgba(87,87,87,1);
+    box-shadow: 6px 6px 16px 0px rgba(87,87,87,1);
+}
+#ctrls{
+    border-radius: 1rem;
+    padding: 1.6rem;
+}
+.ctrls_wrapper > span{
+    cursor: pointer;
+    color: #ffffff;
+    font: 6rem;
+    padding: 1rem;
+    transition: 0.3s;
+}
+.ctrls_wrapper > span:hover{
+    color:#f30;
+    transition: 0.5s;
+}
+
+#crnt_sng{
+    overflow: hidden;
+    padding: 0;
+    margin-top:0;
+}
+#sng_lst{
+    overflow: hidden;
+    text-align: left;
+
+}
+li{
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 3em;
+}
+li:hover{
+    background: lightslategray;
+    transition: 0.8s;
+}
+a{
+    color: whitesmoke;
+}
+
+progress {
+    width: 90%;
+    height: 3rem;
+    margin-top: 4rem;
+}
+
+.cpy_rgt{
+
+    font-size:10px;
+}
+
+#volumeSlider {
+    -webkit-appearance: none;
+    appearance: none; 
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  
+  #volumeSlider::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+  }
+  
+  #volumeSlider::-moz-range-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+  }
+  
+  #volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #f50;
+    box-shadow: -407px 0 0 400px #f50;
+  }
+  
+  #volumeSlider::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #f50;
+    box-shadow: -407px 0 0 400px #f50;
+  }
+
+@media (min-width:800px){
+    body{
+        max-width: 60vw;
+        font-size:1.8rem;
+    }
+
+}
+
